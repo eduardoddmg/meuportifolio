@@ -10,6 +10,17 @@ let instagram = document.querySelector('.fa-instagram');
 let linkedin = document.querySelector('.fa-linkedin');
 let github = document.querySelector('.fa-github');
 let p_contato = document.querySelector('.p_contato');
+let link = document.getElementsByTagName('a');
+
+for (let i of link)
+{
+    i.addEventListener('click', () => {
+        document.body.style.overflowY = 'scroll';
+        nav_links.style.display = 'none';
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+    })
+}
 
 btn.addEventListener('click', () => {
     if (icon.classList.contains('fa-bars'))

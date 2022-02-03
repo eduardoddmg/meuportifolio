@@ -77,7 +77,7 @@ a
 
 .nav_links a:hover
 {
-    color: rgb(196, 147, 241);
+    color: black;
     transition: 0.7s;
 }
 
